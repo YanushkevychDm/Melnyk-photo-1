@@ -1,0 +1,23 @@
+.footer {
+  background-color: $color-grey;
+  color: $color-white;
+  font-family: $font-main;
+  font-size: 1.4rem;
+  padding: 0 $hor-spacing-1;
+  color: $color-grey-light-1;
+}
+
+.contact {
+
+  &__info {
+    color: $color-yellow-contact;
+  }
+}
+
+.cities {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  justify-content: space-around;
+  color: $color-grey-light-3;
+}

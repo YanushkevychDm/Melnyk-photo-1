@@ -1,0 +1,108 @@
+.navbar {
+  font-family: $font-secondary;
+  font-size: 18px;
+  background-color: transparent;
+  // border-bottom: 1px solid $color-black;
+  padding: 10px $hor-spacing-1;
+  height: 15rem;
+  // box-shadow: 0 5px 5px $color-grey-dark-1;
+}
+#main-nav {
+  list-style-type: none;
+  display: none;
+  flex-direction: column;
+}
+#main-nav li {
+  text-align: center;
+  margin: 15px auto;
+  color: $color-white;
+}
+
+
+.logo {
+  text-decoration: none;
+  color: $color-white;
+  margin-top: 0;
+  display: flex;
+  // width: 15.1rem;
+  flex-direction: column;
+  align-items: center;
+
+  &__img--header {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  &__img--footer {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  &__name {
+    font-family: 'Lobster', cursive;
+    font-family: 'Kelly Slab', cursive;
+    font-size: 3.5rem;
+    letter-spacing: 1px;
+    font-weight: 300;
+    line-height: 3.5rem;
+
+  }
+
+  &__job {
+    color: $color-yellow-contact;
+    // font-family: $font-title;
+    // font-family: 'Lobster', cursive;
+    // font-family: 'Marck Script', cursive;
+    // font-family: 'Bad Script', cursive;
+    // font-family: 'Caveat', cursive;
+    font-family: 'Kelly Slab', cursive;
+
+    font-size: 2.4rem;
+    font-style: italic;
+    letter-spacing: 1px;
+    line-height: 3rem;
+    transform: rotate(-5deg) translateX(4.5rem);
+  }
+}
+
+.nav-links:hover {
+  color: $color-yellow-active;
+}
+
+#navbar-toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 24px;
+}
+#navbar-toggle:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 15rem;
+    align-items: center;
+  }
+  #main-nav {
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  #main-nav li {
+    margin: 0;
+  }
+  .nav-links {
+    margin-left: 40px;
+  }
+
+  #navbar-toggle {
+    display: none;
+  }
+}

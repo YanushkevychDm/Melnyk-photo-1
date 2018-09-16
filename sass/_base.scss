@@ -1,0 +1,66 @@
+// palette
+
+// $color-light-pink: #eae8e0;
+// $color-pink: #f5d9d9;
+// $color-light-orange: #fbead1;
+$color-grey: #333333;;
+
+$color-red: hsl(350, 93%, 39%);
+$color-red-active: hsl(350, 92%, 49%);
+
+$color-grey-dark-1: #696969;
+$color-grey-dark-2: #333333;
+$color-grey-light-1: #eae8e0;
+$color-yellow-active: #e6b559;
+$color-yellow-social: #daa520;
+$color-yellow-contact: #cc9933;
+$color-white: #fff;
+$color-black: #000;
+
+
+$color-grey-light-2: #f2f2f2;
+$color-grey-dark-3: #161c1f;
+$color-grey-light-3: #616161;
+
+$color-grey-dark-4: #575757;
+$color-grey-dark-5: #383838;
+
+
+$font-main: 'open sans', sans-serif;
+$font-secondary: 'lato', sans-serif;
+$font-title: 'oswald', sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+    font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+
+    // @media only screen and (max-width: $bp-large) {
+    //     font-size: 50%;
+    // }
+}
+
+body {
+    font-family: $font-main;
+    font-weight: 400;
+    line-height: 1.6;
+    color: $color-grey-dark-2;
+    min-height: 100vh;
+    background-color: $color-white;
+}
